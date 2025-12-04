@@ -1,8 +1,9 @@
  *{
     text-decoration: none;
-    font-family: system-ui;
-    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(204, 202, 202);
     scroll-behavior: smooth;
+    background-color: rgb(53, 52, 52);
  }
 
 
@@ -15,7 +16,7 @@ min-height: 10vh;
 }
 
 main{
-    min-height: 100vh;
+   
 
 }
 .sagiMain{
@@ -27,15 +28,17 @@ nav{
     gap: 30px;
 }
 
-.card .imgBox div h3{
-place-items: center;
 
+header{
 
+    text-align: center;
 }
+
+
 .card, .imgBox{
 
-    padding: 2%;
-    border: 1px solid black;
+    padding: 1.5%;
+    border: 1px solid rgb(27, 27, 27);
 }
 .imgBox{
     aspect-ratio: 1/1;
@@ -61,6 +64,14 @@ width: 100%;  /* Inställning som gäller alla bilder */
   nav{
        grid-template-columns: 1fr 1fr;
         place-items: center;
+
+    }
+
+    main{
+        
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            gap: 20px;
 
     }
 
