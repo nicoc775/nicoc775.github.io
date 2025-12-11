@@ -1,19 +1,24 @@
  *{
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(204, 202, 202);
+    font-family: system-ui;
+    color: rgb(255, 255, 255);
     scroll-behavior: smooth;
-    background-color: rgb(53, 52, 52);
+    
+
  }
 
 
 header, main, footer, nav{
 
-border: 1px solid black;
+border: 1px#0b0f2b;
 padding: 3%;
 min-height: 10vh;
+background-color: #0b0f2b;
 
 }
+
+
+
 
 main{
    
@@ -32,13 +37,17 @@ nav{
 header{
 
     text-align: center;
+      background: #10153a;
+      padding: 30px;
 }
+
 
 
 .card, .imgBox{
 
-    padding: 1.5%;
-    border: 1px solid rgb(27, 27, 27);
+    padding: 1%;
+    border-radius: 15px;
+   
 }
 .imgBox{
     aspect-ratio: 1/1;
@@ -46,10 +55,20 @@ header{
 
 .card{
     text-align: center;
+    background: #121638;
+     color: white;
+     text-decoration: none;
+    
 }
 
 img{
 width: 100%;  /* Inställning som gäller alla bilder */
+border-radius: 15px;
+transition: all 1s;
+}
+
+.imgBox img:hover{
+    border-radius: 50px;
 }
 
 
@@ -80,7 +99,16 @@ width: 100%;  /* Inställning som gäller alla bilder */
 
 }
 
-  
+body{
+    margin: 8px;
+}
 
+footer{
+    border: 3px solid#10153a;
+}
+
+.sagiMain{
+    
+}
 
 
