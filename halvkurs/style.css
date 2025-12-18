@@ -58,7 +58,7 @@ header{
     background: #121638;
      color: white;
      text-decoration: none;
-    
+    display: block;
 }
 
 img{
@@ -86,16 +86,13 @@ transition: all 1s;
 
     }
 
-    main{
+    .indexMain{
         
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 20px;
 
     }
-
-
-
 
 }
 
@@ -108,7 +105,16 @@ footer{
 }
 
 .sagiMain{
-    
+    min-height: 60vh;
+    place-items: center;
 }
+
+.sagiMain div{
+
+    display: grid;
+}
+
+
+
 
 
