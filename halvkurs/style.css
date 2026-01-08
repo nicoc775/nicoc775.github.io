@@ -1,39 +1,49 @@
  *{
     text-decoration: none;
     font-family: system-ui;
-    color: rgb(255, 255, 255);
+
     scroll-behavior: smooth;
-    
+    margin: 0;
+    padding: 0;
 
  }
+:root{
 
+    --bg:#0b0f2b;
+
+}
+
+body{
+    background-color: var(--bg);
+}
 
 header, main, footer, nav{
 
 border: 1px#0b0f2b;
 padding: 3%;
 min-height: 10vh;
-background-color: #0b0f2b;
+background-color: var(--bg);
+    color: rgb(255, 255, 255);
+}
 
+a{
+        color: rgb(255, 255, 255);
 }
 
 
 
-
-main{
-   
-
-}
 .sagiMain{
  /* klass för main-elementet på sidan sagi.html */
 }
-nav{
+.index nav{
 
     display: grid;
     gap: 30px;
 }
 
-
+.sagi nav{
+    padding: 0;
+}
 header{
 
     text-align: center;
@@ -96,9 +106,7 @@ transition: all 1s;
 
 }
 
-body{
-    margin: 8px;
-}
+
 
 footer{
     border: 3px solid#10153a;
