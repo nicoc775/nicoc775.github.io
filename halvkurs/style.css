@@ -31,9 +31,12 @@ a{
 }
 
 
+header h2{
+    padding: 2%;
+}
 
-.sagiMain{
- /* klass för main-elementet på sidan sagi.html */
+.sagiMain div{
+    text-align: center;
 }
 .index nav{
 
@@ -104,6 +107,8 @@ transition: all 1s;
 
     }
 
+  
+    
 }
 
 
@@ -121,7 +126,6 @@ footer{
 
     display: grid;
 }
-
 
 
 
