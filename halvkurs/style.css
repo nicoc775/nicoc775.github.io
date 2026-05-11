@@ -13,6 +13,14 @@
 
 }
 
+header{
+
+    text-align: center;
+      background: #10153a;
+      padding: 30px;
+}
+
+
 body{
     background-color: var(--bg);
 }
@@ -35,26 +43,13 @@ header h2{
     padding: 2%;
 }
 
-.sagiMain div{
-    text-align: center;
-}
+
+
 .index nav{
 
     display: grid;
     gap: 30px;
 }
-
-.sagi nav{
-    padding: 0;
-}
-header{
-
-    text-align: center;
-      background: #10153a;
-      padding: 30px;
-}
-
-
 
 .card, .imgBox{
 
@@ -77,13 +72,13 @@ header{
 img{
 width: 100%;  /* Inställning som gäller alla bilder */
 border-radius: 15px;
-transition: all 1s;
+transition: border-radius 1s;
+transition-timing-function: ease-out;
 }
 
-.imgBox img:hover{
+.imgBox img:hover{ 
     border-radius: 50px;
 }
-
 
 .imgBox img{
     /* Inställningar som gäller alla bilder som ligger i en låda som tillhör klassen imgBox */
@@ -125,8 +120,12 @@ footer{
 .sagiMain div{
 
     display: grid;
+    text-align: center;
 }
 
+.sagi nav{
+    padding: 0;
+}
 
 
 
