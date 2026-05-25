@@ -1,0 +1,270 @@
+/* =====================================================
+   GLOBALA INSTÄLLNINGAR
+   Gäller för hela sidan
+===================================================== */
+
+/* 
+ * * väljer alla element på sidan
+ */
+* {
+    scroll-behavior: smooth; /* Mjuk scrollning mellan länkar */
+    font-family: system-ui;  /* Standard systemfont */
+    box-sizing: border-box;  /* Padding och border räknas in i storleken */
+    color: white;            /* Standard textfärg */
+}
+
+
+/* =====================================================
+   CSS-VARIABLER
+   Variabler som kan återanvändas
+===================================================== */
+
+:root {
+    --bg: #060e4e;           /* Mörkblå bakgrund */
+    --bg2: rgb(1, 3, 95);   /* Lite ljusare blå */
+}
+
+
+/* =====================================================
+   BODY
+   Hela sidans bakgrund och standardtext
+===================================================== */
+
+body {
+    background-color: var(--bg);
+    color: white;
+}
+
+
+/* =====================================================
+   LÄNKAR
+===================================================== */
+
+a {
+    text-decoration: none;      /* Tar bort understrykning */
+    background-color: var(--bg);
+}
+
+
+/* =====================================================
+   HUVUDSEKTIONER
+   Header, navigation, main och footer
+===================================================== */
+
+header,
+main,
+footer,
+nav {
+    border: 1px solid black;
+    padding: 2%;
+    min-height: 20vh;
+}
+
+/* Main ska vara större än övriga sektioner */
+main {
+    min-height: 60vh;
+}
+
+/* Centrera rubriker i main */
+main h2 {
+    text-align: center;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav a {
+    border: 1px solid black;
+    padding: 1rem;
+    display: block;
+
+    background-color: var(--bg2);
+
+    border-radius: 10px;
+
+    /* Animation vid hover */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =====================================================
+   KORT / CARDS
+===================================================== */
+
+.card {
+    text-align: center;
+    text-decoration: none;
+
+    display: block;
+    overflow: hidden;
+    
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+/* =====================================================
+   BILDER
+===================================================== */
+
+.solar img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    /* Animation vid hover */
+    transition:
+        transform 0.4s ease,
+        border-radius 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* =====================================================
+   HOVER-EFFEKT PÅ BILDER
+===================================================== */
+
+.solar img:hover {
+    transform: scale(1.05); /* Zoomar in bilden lite */
+   
+}
+
+
+
+
+
+/* =====================================================
+   BILDKONTAINER I CARDS
+===================================================== */
+
+.solar .card div {
+   
+
+    aspect-ratio: 1/1; /* Gör containern kvadratisk */
+
+    overflow: hidden; /* Döljer delar som sticker ut */
+}
+
+
+/* =====================================================
+   PLANETSIDA - STOR BILD
+===================================================== */
+
+.planet img {
+
+    border-radius: 30px;
+}
+
+
+/* =====================================================
+   MEDIA QUERY
+   Gäller för skärmar större än 600px
+===================================================== */
+
+@media (min-width: 600px) {
+
+    /* =========================================
+       NAVIGATION SOM GRID
+    ========================================= */
+
+    nav {
+        
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+
+        
+    }
+
+    /* Rubriken tar upp alla 3 kolumner */
+    nav h2 {
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    /* Hover-animation på länkar */
+    nav a {
+        
+        
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+
+    /* =========================================
+       SOLSYSTEMETS GRID-LAYOUT
+    ========================================= */
+
+    .solar {
+        display: grid;
+
+        grid-template-columns: repeat(6, 1fr);
+
+        gap: 30px;
+    }
+
+    /* Alla element tar upp 2 kolumner */
+    .solar > * {
+        grid-column: span 2;
+    }
+
+
+    /* =========================================
+       HOVER PÅ LÄNKAR
+    ========================================= */
+
+   
+
+    /* =========================================
+       POSITIONERING AV SISTA RADEN
+    ========================================= */
+
+    .nLast {
+        grid-column: 2 / 4;
+    }
+
+
+    /* =========================================
+       STOR RUBRIK
+    ========================================= */
+
+    .solartitle {
+        grid-column: span 6;
+    }
+}
+
+
+/* =====================================================
+   HEMSIDANS BAKGRUNDSBILD
+===================================================== */
+
+.home {
+    text-align: center;
+
+    background-image: url("pismis-24.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+nav a:hover {
+        transform: scale(1.1);
+    }
+
+
+.planet img {
+    width: 100%;
+    height: auto;
+    
+}
+
+
