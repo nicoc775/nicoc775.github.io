@@ -72,6 +72,7 @@ nav a {
     display: block;
     background-color: var(--bg2);
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -184,6 +185,8 @@ nav a {
         align-items: center;
         gap: 1rem;
         grid-template-columns: auto auto auto;
+        
+            
     }
 
     nav h2 {
@@ -191,6 +194,15 @@ nav a {
         text-align: center;
     }
 
+    .home{
+    }
+    nav a{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+     }
+
+
+    }
 
     /* ===== SOLAR GRID ===== */
 
@@ -205,7 +217,10 @@ nav a {
         
     }
 
-    
+    a:hover{
+
+        transform: scale(1.1);
+    }
 
     /* ===== LAST ROW POSITIONING ===== */
 
@@ -219,10 +234,14 @@ nav a {
     .solartitle {
         grid-column: span 6;
     }
-}
+
 
 
 .home{
    
     text-align: center;
+    background-image: url("pismis-24.jpg");
+    background-size: cover;
+    background-position: center;
+  
 }
